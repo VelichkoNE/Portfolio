@@ -1,0 +1,82 @@
+<!-- Для мобилы планирую сделать слайдер через JS. При переключении радиобаттонов добавлять и убирать клас visually-hidden -->
+
+<section class="bikes">
+    <div class="container">
+        <h2 class="section-title bikes__title">Наши квадроциклы для катаний</h2>
+        <div class="bikes__inner">
+            <ul class="bikes__list-bikes">
+                {% for item in '123' %}
+                <li class="bikes__bike visually-hidden">
+                    <img class="bikes__bike-photo" src="../../../static/proj/Mysite1/img/kvadr.png"
+                        alt="фото квадроцикла">
+                    <div class="bikes__bike-inner">
+                        <h3 class="item-title bikes__bike-name">Квадроцикл CF MOTO 500 {{item}}</h3>
+                        <div class="line"></div>
+                        <dl class="bikes__list-characteristics">
+                            <dt class="bikes__list-characteristics-term">Колличество мест:</dt>
+                            <dd class="bikes__list-characteristics-def">2</dd>
+                            <dt class="bikes__list-characteristics-term">Усилитель руля: </dt>
+                            <dd class="bikes__list-characteristics-def">нет</dd>
+                            <dt class="bikes__list-characteristics-term">Допустимый вес:</dt>
+                            <dd class="bikes__list-characteristics-def">250 кг</dd>
+                        </dl>
+                        <dl class="bikes__list-price">
+                            <dt class="bikes__list-price-term">Спокойная езда:</dt>
+                            <dd class="bikes__list-price-def">от 2000 рублей</dd>
+                        </dl>
+                        <dl class="bikes__list-price">
+                            <dt class="bikes__list-price-term">Средняя сложность:</dt>
+                            <dd class="bikes__list-price-def">от 3000 рублей</dd>
+                        </dl>
+                        <dl class="bikes__list-price">
+                            <dt class="bikes__list-price-term">Эксрим, грязь, бездорожье (для опытнх водителей):</dt>
+                            <dd class="bikes__list-price-def">от 4000 рублей</dd>
+                        </dl>
+                        <button class="bikes__button btn">Забронировать поездку</button>
+                    </div>
+                </li>
+                {% endfor %}
+                <li class="bikes__bike">
+                    <img class="bikes__bike-photo" src="../../../static/proj/Mysite1/img/kvadr.png"
+                        alt="фото квадроцикла">
+                    <div class="bikes__bike-inner">
+                        <h3 class="item-title bikes__bike-name">Квадроцикл CF MOTO 500</h3>
+                        <div class="line"></div>
+                        <dl class="bikes__list-characteristics">
+                            <dt class="bikes__list-characteristics-term">Колличество мест:</dt>
+                            <dd class="bikes__list-characteristics-def">2</dd>
+                            <dt class="bikes__list-characteristics-term">Усилитель руля: </dt>
+                            <dd class="bikes__list-characteristics-def">нет</dd>
+                            <dt class="bikes__list-characteristics-term">Допустимый вес:</dt>
+                            <dd class="bikes__list-characteristics-def">250 кг</dd>
+                        </dl>
+                        <dl class="bikes__list-price">
+                            <dt class="bikes__list-price-term">Спокойная езда:</dt>
+                            <dd class="bikes__list-price-def">от 2000 рублей</dd>
+                        </dl>
+                        <dl class="bikes__list-price">
+                            <dt class="bikes__list-price-term">Средняя сложность:</dt>
+                            <dd class="bikes__list-price-def">от 3000 рублей</dd>
+                        </dl>
+                        <dl class="bikes__list-price">
+                            <dt class="bikes__list-price-term">Эксрим, грязь, бездорожье (для опытнх водителей):</dt>
+                            <dd class="bikes__list-price-def">от 4000 рублей</dd>
+                        </dl>
+
+                        <button class="bikes__button btn">Забронировать поездку</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="bikes__slider points-slider">
+            <button class="points-slider__btn-back bikes__slider-btn-back"><img class="back-img-btn"
+                    src="../../../static/proj/Mysite1/img/leftarrow.png" alt="символ переключения назад"></button>
+            <input class="points-slider__point bikes__slider-point1" type="radio" name="bikes" value="1">
+            <input class="points-slider__point bikes__slider-point2" type="radio" name="bikes" value="2" checked>
+            <input class="points-slider__point bikes__slider-point3" type="radio" name="bikes" value="3">
+            <input class="points-slider__point bikes__slider-point4" type="radio" name="bikes" value="4">
+            <button class="points-slider__btn-forvard bikes__slider-btn-forvard"><img class="forvard-img-btn"
+                    src="../../../static/proj/Mysite1/img/rightarrow.png" alt="символ переключения вперед"></button>
+        </div>
+    </div>
+</section>

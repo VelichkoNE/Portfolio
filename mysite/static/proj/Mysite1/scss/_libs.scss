@@ -1,0 +1,125 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+   /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+.visually-hidden {
+  display: none;
+  transform: scale(0);
+  height: 0; 
+  overflow: hidden;
+}
+.visually-hidden-100 {
+    display: none;
+    transform: scale(0);
+    height: 0; 
+    overflow: hidden;
+
+}
+
+.btn {
+  background: linear-gradient(90deg, #FFE259 0%, #FFA751 100%);
+  box-shadow: 0px 5px 30px rgba(255, 196, 85, 0.41);
+  border: 0px;
+  border-radius: 8px;
+}
+
+.section-title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.line {
+
+  width: 140.5px;
+  height: 0;
+  border-bottom: 2px solid rgba(31, 71, 216, 0.3);
+}
+
+.article-title-line {
+
+  width: 171.18px;
+  height: 0;
+  border-bottom: 2px solid rgba(31, 71, 216, 0.3);
+
+}
+
+.questions__button-answer {
+  width: 33px;
+  height: 33px;
+  border: 2px solid rgba(95, 124, 227, 0.5);
+  background: transparent;
+  border-radius: 50%;
+  
+  
+
+}
+
+.questions__hide-row {
+
+  width: 9.9px;
+  height: 9.9px;
+  border-bottom: 2px solid rgba(95, 124, 227, 0.5);
+  border-right: 2px solid rgba(95, 124, 227, 0.5) ;
+  transform: rotate(-135deg);
+  margin-top: 7px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.questions__show-row {
+
+  width: 9.9px;
+  height: 9.9px;
+  border-bottom: 2px solid rgba(95, 124, 227, 0.5);
+  border-right: 2px solid rgba(95, 124, 227, 0.5) ;
+  transform: rotate(45deg);
+  margin-top: 7px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.grey-circle {
+
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(36, 38, 44, 0.5);;
+}
+
+
+
+
+
+
+
+/**
+ * Render the `main` element consistently in IE.
+ */
